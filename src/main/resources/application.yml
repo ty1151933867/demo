@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo2
+
+logging:
+  charset:
+    console: UTF-8
