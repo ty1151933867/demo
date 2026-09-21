@@ -10,13 +10,13 @@ public class CacheValue {
         IWorkbook  workbook = new Workbook();
         workbook.setEnableCalculation( false);
         IWorksheet sheet = workbook.getWorksheets().get(0);
-        sheet.getRange("A1").setFormula("=SUM(10,20)");
+        sheet.getRange("A1").setFormula("=SUM(100,101,110)");
         sheet.getRange("A2").setValue(LocalDate.of(2026, 5, 19));
         sheet.getRange("A3").setValue(null);
         sheet.getRange("A4").setValue("");
         sheet.getRange("A5").setValue(1000);
         XlsxSaveOptions xlsxSaveOptions = new XlsxSaveOptions();
         xlsxSaveOptions.setIsCompactMode(false);
-        workbook.save("cache.xlsx", xlsxSaveOptions);
+        workbook.save("cache-1.2.1.xlsx", xlsxSaveOptions);
     }
 }
