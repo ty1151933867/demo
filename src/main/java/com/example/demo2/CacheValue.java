@@ -10,7 +10,7 @@ public class CacheValue {
         IWorkbook  workbook = new Workbook();
         workbook.setEnableCalculation( false);
         IWorksheet sheet = workbook.getWorksheets().get(0);
-        sheet.getRange("A1").setFormula("=SUM(1,40)");
+        sheet.getRange("A1").setFormula("=SUM(1,50)");
         sheet.getRange("A2").setValue(LocalDate.of(2026, 5, 19));
         sheet.getRange("A3").setValue(null);
         sheet.getRange("A4").setValue("");
